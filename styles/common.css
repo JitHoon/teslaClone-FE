@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+video{
+  display: block;
+  
+  height: 100vh;
+  object-fit: cover;
+  
+  inline-size: 100%;
+
+  overflow: clip;
+  overflow-clip-margin: content-box;
+
+  outline: none;
+  border: none;
+
+  position: relative;
+  z-index: -1;
+}
+
+.hidden{
+  display: none;
+}
+
+button{
+  border: none;
+  
+  background-color: transparent;
+  color: #181A1F;
+}
+
+a, a:visited, a:active{
+  text-decoration: none;
+  color: #181A1F;
+}
