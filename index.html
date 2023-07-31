@@ -130,7 +130,7 @@
           </button>
         </li>
       </ol>
-      <dialog>
+      <dialog id="menu">
         <div class="menu-header">
           <button class="menu-close-btn" type="button">
             <svg
@@ -272,7 +272,7 @@
                   ></path>
                 </svg>
                 <div class="menu-item-word-text">
-                  <div><strong>대한민국</strong></div>
+                  <strong>대한민국</strong>
                   <a class="menu-item-word-text-ko">한국어</a>
                 </div>
               </div>
@@ -281,15 +281,16 @@
         </section>
       </dialog>
     </header>
-    <main>
+    <main id="main-page">
       <section class="snappin-box test-drive">
-        <video loop muted autoplay>
+        <video id="wlcome-video" loop muted autoplay>
           <source
             src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"
+            type="video/mp4"
           />
         </video>
         <div class="snappin-box-text">
-          <h2>Tesla 경험하기</h2>
+          <h2 class="firstH2">Tesla 경험하기</h2>
           <p>지금 시승 예약하기</p>
         </div>
         <div class="snappin-box-btn">

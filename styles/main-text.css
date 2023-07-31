@@ -1,15 +1,13 @@
 .snappin-box-text {
   max-width: 400px;
-  height: auto;
-
-  margin: 0 auto;
+  
   position: absolute;
   top: 14%;
 
   text-align: center;
 }
 
-.snappin-box-text h1 {
+.snappin-box-text h2 {
   font-size: 42px;
 
   letter-spacing: 3px;
@@ -20,6 +18,10 @@
   animation-delay: 1s;
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+.snappin-box-text .firstH2{
+  color: #F9F8F8;
 }
 
 .snappin-box-text p {
@@ -60,9 +62,6 @@
   bottom: 5rem;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 
   animation-name: fadeInUp;
   animation-delay: 2s;
