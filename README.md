@@ -316,7 +316,8 @@ function changeColorToBlack() {
      
   <details>
   <summary>[ SCSS Update ✨ ]</summary>
-    1. SCSS Ampersand (상위 선택자 참조)를 활용한 가독성 및 코드 연관성 향상
+	  
+1. SCSS Ampersand (상위 선택자 참조)를 활용한 가독성 및 코드 연관성 향상
 
 ```css
 #menu {
@@ -431,8 +432,7 @@ Sass-App
 ```html
 <link rel="stylesheet" href="./src/styles/styles.scss" />
 ```
-
-  </details>details>
+</details>
 
 <br/>
 
