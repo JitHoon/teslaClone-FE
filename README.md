@@ -337,7 +337,7 @@ function changeColorToBlack() {
 #menu {
 	...
 
-	&[open] {
+    &[open] {
       ...
     }
 
@@ -364,22 +364,22 @@ function changeColorToBlack() {
 #menu-btn:hover,
 #menu-close-btn svg:hover,
 #menu-items li a:hover {
-	border-radius: 3px;
-	background-color: #b3b9bc4b;
+    border-radius: 3px;
+    background-color: #b3b9bc4b;
 }
 ```
 
 ```scss
 @mixin menuBtnHover {
-	border-radius: 3px;
-	background-color: #b3b9bc4b;
+    border-radius: 3px;
+    background-color: #b3b9bc4b;
 }
 
 #menu-btn {
 	...
 	
     &:hover {
-		@include menuBtnHover;
+            @include menuBtnHover;
 	}
 }
 
@@ -387,24 +387,24 @@ function changeColorToBlack() {
 	...
 
 	&:hover {
-		@include menuBtnHover;
+            @include menuBtnHover;
 	}
 }
 
 #menu-items {
 	...
 
-	li {
-		...
-	}
+    li {
+        ...
+    }
 
-	a {
-		...
+    a {
+        ...
 
-		&:hover {
-			@include menuBtnHover;
-		}
-	}
+        &:hover {
+            @include menuBtnHover;
+        }
+    }
 }
 ```
       
