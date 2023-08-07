@@ -313,8 +313,9 @@ function changeColorToBlack() {
 2. 해당 프로젝트를 점점 더 발전시키자.<br/>
    SCSS로 스타일링을 해보거나 JS을 추가하는 등 직접 구현 공부를 하면서 이 웹 사이트를 점점 키워나가자. 향후 이 프로젝트와 비교하면서 React 버전으로 코딩을 연습해도 좋을 것 같다.
 
+<br/>
      
-### [ Code Refactoring 🔨 ]
+## [ Code Refactoring 🔨 ]
 	  
 1. SCSS Ampersand (상위 선택자 참조)를 활용한 가독성 및 코드 연관성 향상
 
