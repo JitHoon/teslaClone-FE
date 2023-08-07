@@ -313,6 +313,126 @@ function changeColorToBlack() {
 2. 해당 프로젝트를 점점 더 발전시키자.<br/>
    SCSS로 스타일링을 해보거나 JS을 추가하는 등 직접 구현 공부를 하면서 이 웹 사이트를 점점 키워나가자. 향후 이 프로젝트와 비교하면서 React 버전으로 코딩을 연습해도 좋을 것 같다.
 
+     
+  <details>
+  <summary>[ SCSS Update ✨ ]</summary>
+    1. SCSS Ampersand (상위 선택자 참조)를 활용한 가독성 및 코드 연관성 향상
+```css
+#menu {
+	...
+}
+
+#menu[open] {
+	...
+}
+
+#menu::backdrop {
+	...
+}
+```
+
+```scss
+#menu {
+	...
+
+	&[open] {
+      ...
+    }
+
+    &::backdrop {
+      ...
+    }
+  }
+  ```
+2. SCSS @mixin, @include를 활용한한 코드 재사용, 읽기 쉬운 코드로 refactoring
+
+```css
+#menu-btn {
+	...    
+}
+
+#menu-close-btn svg {
+	...    
+}
+
+#menu-items li a {
+	...
+}
+
+#menu-btn:hover,
+#menu-close-btn svg:hover,
+#menu-items li a:hover {
+	border-radius: 3px;
+	background-color: #b3b9bc4b;
+}
+```
+
+```scss
+@mixin menuBtnHover {
+	border-radius: 3px;
+	background-color: #b3b9bc4b;
+}
+
+#menu-btn {
+	...
+	
+    &:hover {
+		@include menuBtnHover;
+	}
+}
+
+#menu-close-btn svg {
+	...
+
+	&:hover {
+		@include menuBtnHover;
+	}
+}
+
+#menu-items {
+	...
+
+	li {
+		...
+	}
+
+	a {
+		...
+
+		&:hover {
+			@include menuBtnHover;
+		}
+	}
+}
+```
+      
+3. Sass Partials 기능을 활용한 각 기능 모듈화 및 유지 보수 편의성 향상
+- 프로젝트 규모가 커지면 파일이 점점 많아지는데, 모든 scss파일을 컴파일하여 각각의 .css 파일로 나눠서 저장한다면 관리나 성능 차원에서 문제가 될 수 있다.
+
+- 파일 이름 앞에 **`_`**를 붙여(**`_header.scss`**와 같이) **`@import`**로 가져오면 컴파일 시 전처리 결과를 한 파일에 모두 넣어줄 수 있다.
+
+```scss
+@import "variables", "header", "menu", "main-content", "main-text", "main-btn",
+```
+```shell
+Sass-App
+  # ...
+  ├─css
+  │  └─main.css  # header + variables + menu ... 전처리 결과를 한 파일에 모두 넣어줌
+  ├─scss
+  │  ├─header.scss
+  │  ├─menu.scss
+  │  ├─variables.scss
+  │  ├─styles.scss
+  │  └─ ...등등
+  # ...
+```
+```html
+<link rel="stylesheet" href="./src/styles/styles.scss" />
+```
+
+  </details>details>
+
 <br/>
 
 <details>
