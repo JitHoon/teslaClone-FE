@@ -150,7 +150,7 @@ HTML과 CSS를 이론 공부에서 끝내지 않고 체화하기 위함입니다
 
 - CSS 전처리 도구를 사용하면 앞선 문제점들을 해결 할 수 있을 것으로 보인다.
  
-- 이에 다양한 CSS 전처리 도구 중에서, 가장 오래되어 성숙도가 높고 커뮤니티가 있으며, 하나의 컴파일러로 모두 컴파일 가능한 SCSS로 리팩토링할 계획이다.
+- 이에 다양한 CSS 전처리 도구 중에서, 가장 오래되어 성숙도가 높고 커뮤니티가 있으며, 하나의 컴파일러로 모두 컴파일 가능한 SCSS로 리팩토링할 계획이다. (리팩토링 완료, 아래 Code Refactoring 목차 확인)
 
 > **6. "왜 이 코드를 쓰는지" 생각하는 습관을 가지자.**
 
@@ -314,8 +314,7 @@ function changeColorToBlack() {
    SCSS로 스타일링을 해보거나 JS을 추가하는 등 직접 구현 공부를 하면서 이 웹 사이트를 점점 키워나가자. 향후 이 프로젝트와 비교하면서 React 버전으로 코딩을 연습해도 좋을 것 같다.
 
      
-  <details>
-  <summary>[ SCSS Update ✨ ]</summary>
+### [ Code Refactoring 🔨 ]
 	  
 1. SCSS Ampersand (상위 선택자 참조)를 활용한 가독성 및 코드 연관성 향상
 
@@ -432,7 +431,6 @@ Sass-App
 ```html
 <link rel="stylesheet" href="./src/styles/styles.scss" />
 ```
-</details>
 
 <br/>
 
